@@ -1,0 +1,15 @@
+/* JDK */
+It stands for Java Development Kit
+It is the tool necessary to compile, document and package Java programs.
+It contains JRE + development tools.
+
+/* JVM */
+It stands for Java Virtual Machine.
+It is an abstract machine. It is a specification that provides a run-time environment in which
+Java bytecode can be executed.
+JVM follows three notations: Specification, Implementation, and Runtime Instance.
+
+/* JRE */
+It stands for Java Runtime Environment. 
+RE refers to a runtime environment in which Java bytecode can be executed.
+t’s an implementation of the JVM which physically exists.
