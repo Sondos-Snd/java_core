@@ -1,0 +1,52 @@
+/*  What is Spring? */
+ Spring is essentially a lightweight, integrated framework that can be used for developing enterprise applications in java.
+
+/* Name the different modules of the Spring framework */
+Some of the important Spring Framework modules are:
+• Spring Context – for dependency injection.
+• Spring AOP – for aspect oriented programming.
+• Spring DAO – for database operations using DAO pattern
+• Spring JDBC – for JDBC and DataSource support.
+• Spring ORM – for ORM tools support such as Hibernate
+• Spring Web Module – for creating web applications.
+• Spring MVC – Model-View-Controller implementation for creating web applications, web services etc.
+
+/*  List some of the important annotations in annotation-based
+Spring configuration. */
+• @Required
+• @Autowired
+• @Qualifier
+• @Resource
+• @PostConstruct
+• @PreDestroy
+
+/*  Explain Bean in Spring and List the different Scopes of Spring
+bean. */
+Beans are objects that form the backbone of a Spring application. They are managed by the Spring IoC container.
+ bean is an object that is instantiated, assembled, and managed by a Spring IoC container.
+
+ There are five Scopes defined in Spring beans.
+ • Singleton: Only one instance of the bean will be created for each container. This is the default scope for the spring beans. While using this 
+scope, make sure spring bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues because it’s not thread-safe.
+• Prototype: A new instance will be created every time the bean is requested.
+• Request: This is same as prototype scope, however it’s meant to be used for web applications. A new instance of the bean will be created for 
+each HTTP request.
+• Session: A new bean will be created for each HTTP session by the container.
+• Global-session: This is used to create global session beans for Portlet applications.
+
+/*  Explain the role of DispatcherServlet and ContextLoaderListener */
+
+/* . What are the differences between constructor injection and setter
+injection? */
+
+/*  What is autowiring in Spring? What are the autowiring modes? */
+
+/* How to handle exceptions in Spring MVC Framework? */
+
+/*  What are some of the important Spring annotations which you
+have used? */
+
+/*  How to integrate Spring and Hibernate Frameworks? */
+
+/* . Name the types of transaction management that Spring 
+supports. */    
