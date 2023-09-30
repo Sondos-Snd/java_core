@@ -1,0 +1,95 @@
+
+/*  What is the difference between Error and Exception? */
+error: An error is an irrecoverable condition occurring at runtime. Such as OutOfMemory error. These JVM errors you cannot repair them at runtime.
+While exceptions are conditions that occur because of bad input or human error etc. e.g. FileNotFoundException will be thrown if the specified file does not
+exist. Or a NullPointerException will take place if you try using a null reference. In most of the cases it is possible to recover from an exception (probably by
+giving the user feedback for entering proper values etc.
+
+/* How can you handle Java exceptions? */
+1. try
+2. catch
+3. finally
+4. throw
+5. throws
+
+/* What are the differences between Checked Exception and
+Unchecked Exception? */
+checked: The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions. checked at compile-time.: IOException, SQLException etc
+unchecked: extend RuntimeException. ArithmeticException, NullPointerException.
+
+/* Will the finally block get executed when the return statement is 
+written at the end of try block and catch block as shown below? */
+There are only a few situations in which the finally block does not execute, such as VM crash, power failure, software crash, etc. If 
+you don’t want to execute the finally block, you need to call the System.exit()  method explicitly in the finally block.
+
+/* . How does an exception propagate in the code? */
+If an exception is not caught, it is thrown from the top of the stack and falls 
+down the call stack to the previous procedure. 
+
+/* Can you explain the Java thread lifecycle? */
+New, Runnable, Waiting, Terminated
+
+/* What purpose do the keywords final, finally, and finalize fulfill? */
+final: Final is used to apply restrictions on class, method, and variable. A final class
+can’t be inherited, final method can’t be overridden and final variable value can’t be changed. 
+
+finally: Finally is used to place important code, it will be executed whether the
+exception is handled or not. 
+
+finalize: Finalize is used to perform clean up processing just before the object is garbage
+collected. 
+
+/*  What are the differences between throw and throws? */
+throw: Checked exceptions can not be propagated with throw only.You cannot throw multiple exception. Throw is followed by an instance.
+throws: Throws is used to declare an exception. Checked exception can be propagated with throws. Throws is followed by class. Throws is used with the method signature.
+
+/* What is exception hierarchy in java? */
+Throwable (class)
+exception ( checked, uncheked) + error (virtual machine, assertion)
+
+/* How to create a custom Exception? */
+ class New1Exception extends Exception { }
+
+/* . What are the important methods of Java Exception Class? */
+Methods are defined in the base class Throwable. Some of the important methods of Java exception class are stated below.
+1. String getMessage() – This method returns the message String about the exception. The message can be provided through its constructor.
+2. public StackTraceElement[] getStackTrace() – This method returns an array containing each element on the stack trace. The element at
+index 0 represents the top of the call stack whereas the last element in the array represents the method at the bottom of the call stack.
+3. Synchronized Throwable getCause() – This method returns the cause of the exception or null id as represented by a Throwable object.
+4. String toString() – This method returns the information in String format. The returned String contains the name of Throwable class and localized
+message.
+5. void printStackTrace() – This method prints the stack trace information to the standard error stream.
+
+/*  What are the differences between processes and threads? */
+thread is subset of process, which is run by operating system and which only exercice control over child processes and run in seperate memory spaces.
+
+/* What is a finally block? Is there a case when finally will not execute? */
+Finally block is a block which always executes a set of statements. It is alwaysassociated with a try block regardless of any exception that occurs or not.
+Yes, finally will not be executed if the program exits either by calling System.exit() or by causing a fatal error that causes the process to abort.
+
+/* . What is synchronization? */
+Synchronization refers to multi-threading.A synchronized block of code can be executed by only one thread at a time.
+
+/* . What is OutOfMemoryError in Java? */
+OutOfMemoryError is the subclass of java.lang.Error which generally occurs 
+when our JVM runs out of memory.
+
+/*  What is a Thread? */
+A thread is the smallest piece of programmed instructions which can be
+executed independently by a scheduler. 
+
+/*  What are the two ways to create a thread? */
+• By implementing the Runnable interface.  the class must implement the public void run() 
+• By extending the Thread: This creates a thread by creating an instance of a new class that extends the 
+Thread class. The extending class must override the run() function, which is the thread’s entry point.
+
+/* . What are the different types of garbage collectors in Java? */
+Javaprovides four types of garbage collectors:
+• Serial Garbage Collector
+• Parallel Garbage Collector
+• CMS Garbage Collector
+• G1 Garbage Collector
+
+/* Java works as “pass by value” or “pass by reference” phenomenon? */
+Java is always pass-by-value. This means that it creates a copy of the contents 
+of the parameter in memory. In Java, object variables always refer to the memory heap’s real object.

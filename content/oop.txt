@@ -1,0 +1,65 @@
+/* What is Polymorphism? */
+ “one interface, many implementations”.
+There are two types of polymorphism:
+1. Compile time polymorphism
+2. Run time polymorphism
+Compile time polymorphism is method overloading whereas Runtime time polymorphism is done using inheritance and interface.
+
+/* . What is runtime polymorphism or dynamic method dispatch? */
+runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at runtime rather than at
+compile-time:
+Car b= new Audi(); 
+
+/* What is abstraction in Java? */
+the process of hiding the implementation details from the user and revealing only the functionality to them. Abstraction can be achieved in two ways:
+1. Abstract Classes (0-100% of abstraction can be achieved)
+2. Interfaces (100% of abstraction can be achieved)
+
+/*  What is the difference between abstract classes and interfaces? */
+abstract class: In the case of an abstract class, a class may extend only one abstract class. 
+
+interface: A Class may implement several interfaces. An Interface visibility must be public (or) none. An Interface cannot contain constructors
+. ( since java 11, u can have default methods ?).
+
+/*  What are the different types of inheritance in Java? */
+ Single Inheritance
+ multilevel
+ hierarchical
+ hybrid
+
+/*  What is method overloading and method overriding? */
+overloading: compile-time polymorphism. same name, each method must have a different number of parameters or
+parameters having different types and order. 
+
+overriding: the same name and exactly the same number and type of parameters and same return type as a superclass.
+ run time polymorphism.
+
+/* . What is an association? */
+Association is a relationship where all object have their own lifecycle and there is no owner. Let’s take the example of Teacher and Student. Multiple students
+can associate with a single teacher and a single student can associate with multiple teachers but there is no ownership between the objects and both have
+their own lifecycle. These relationships can be one to one, one to many, many to one and many to many.
+
+/* What do you mean by aggregation? */
+An aggregation is a specialized form of Association where all object has their own lifecycle but there is ownership and child object can not belong to another
+parent object. Let’s take an example of Department and teacher. A single teacher can not belong to multiple departments, but if we delete the
+department teacher object will not destroy.
+
+/* What is composition in Java? */
+Composition is again a specialized form of Aggregation and we can call this as a “death” relationship. It is a strong type of Aggregation. Child object does not
+have their lifecycle and if parent object deletes all child object will also be deleted. Let’s take again an example of a relationship between House and
+rooms. House can contain multiple rooms there is no independent life of room and any room can not belongs to two different houses if we delete the house
+room will automatically delete.
+
+/* What is a marker interface? */
+empty. Serializable.
+
+/* What is object cloning in Java? */
+new object with similar state.clone () creates a new instance of the class of the current object and then initializes all its fields with the exact same contents of
+corresponding fields.
+the marker interface java.lang.Cloneable must be implemented to avoid any runtime exceptions. One thing you must note is Object clone() is a protected method,
+thus you need to override it.
+
+/* What is a copy constructor in Java? */
+Copy constructor is a member function that is used to initialize an object usinganother object of the same class
+there is no need for copy constructor in Java since all objects are passed by reference
+

@@ -1,0 +1,22 @@
+/*  What are the life-cycle methods for a jsp? */
+
+/*  What are the JSP implicit objects? */
+
+/* What are the differences between include directive and include
+action? */
+
+/* How to disable caching on back button of the browser? */
+
+/* . What are the different tags provided in JSTL? */
+
+/*  How to disable session in JSP? */
+
+/* How to delete a Cookie in a JSP? */
+
+/*  Explain the jspDestroy() method. */
+
+/*  How is JSP better than Servlet technology? */
+
+/* Why should we not configure JSP standard tags in web.xml? */
+
+/*  How will you use JSP EL in order to get the HTTP method name? */
